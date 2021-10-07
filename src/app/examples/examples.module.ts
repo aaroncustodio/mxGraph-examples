@@ -5,6 +5,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { BasicStylingComponent } from './basic-styling/basic-styling.component';
 import { DropTargetsComponent } from './drop-targets/drop-targets.component';
 import { CustomLabelsComponent } from './custom-labels/custom-labels.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -17,7 +18,8 @@ import { CustomLabelsComponent } from './custom-labels/custom-labels.component';
     CustomLabelsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ]
 })
 export class ExamplesModule { }
