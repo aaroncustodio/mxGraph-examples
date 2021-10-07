@@ -220,7 +220,8 @@ declare class mxGraph {
   scaleCell(cell, dx, dy, recurse);
   extendParent(cell);
   importCells(cells, dx, dy, target, evt);
-  moveCells(cells, dx, dy, clone, target, evt);
+  // moveCells(cells, dx, dy, clone, target, evt);
+  moveCells(cells, dx: number, dy: number, clone: boolean, target?, evt?, mapping?);
   cellsMoved(cells, dx, dy, disconnect, constrain, extend);
   translateCell(cell, dx, dy);
   getCellContainmentArea(cell);
