@@ -19,7 +19,7 @@ export class BasicStylingComponent implements OnInit {
     this.loadGraph();
   }
 
-  loadGraph() {
+  loadGraph(): void {
     const graphContainer = this.graphContainer.nativeElement;
     this.graph = new mxGraph(graphContainer);
 
@@ -51,7 +51,7 @@ export class BasicStylingComponent implements OnInit {
   CELL_STYLE_1 = "style-1";
   CELL_STYLE_2 = "style-2";
   EDGE_STYLE = "edge-style";
-  setStyles(graph: mxGraph) {
+  setStyles(graph: mxGraph): void {
     let style = graph.getStylesheet().getDefaultVertexStyle();
 
     style = mxUtils.clone(style);

@@ -19,7 +19,7 @@ export class HelloWorldComponent implements OnInit {
     this.loadGraph();
   }
 
-  loadGraph() {
+  loadGraph(): void {
     const graphContainer = this.graphContainer.nativeElement;
     this.graph = new mxGraph(graphContainer);
 
@@ -27,7 +27,6 @@ export class HelloWorldComponent implements OnInit {
     try {
       const parent = this.graph.getDefaultParent();
 
-      // Insert 
       var v1 = this.graph.insertVertex(parent, null, 'Hello,', 20, 20, 80, 30);
       var v2 = this.graph.insertVertex(parent, null, 'World!', 200, 150, 80, 30);
       var e1 = this.graph.insertEdge(parent, null, '', v1, v2);
