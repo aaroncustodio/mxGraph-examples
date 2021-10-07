@@ -12,26 +12,6 @@ declare module Util {
 }
 
 /**
- * The mxEventObject is a wrapper for all properties of a single event.  Additionally, it also offers functions
- * to consume the event and check if it was consumed as follows:
- */
-declare class mxEventObject {
-  constructor(name: string);
-
-  /** Holds the name. */
-  name: string;
-
-  /** Holds the properties as an associative array. */
-  properties: any;
-
-  /** Returns name */
-  getName: () => string;
-
-  /** Returns the property for the given key. */
-  getProperty: (key: string) => any;
-}
-
-/**
  * A wrapper class for an associative array with object keys.  Note: This implementation uses <mxObjectIdentitiy> to
  * turn object keys into strings.
  */
@@ -59,8 +39,27 @@ declare class mxDictionary {
   getValues: () => string[];
 }
 
+declare var mxConstants;
 
+/**
+ * The mxEventObject is a wrapper for all properties of a single event.  Additionally, it also offers functions
+ * to consume the event and check if it was consumed as follows:
+ */
+ declare class mxEventObject {
+  constructor(name: string);
 
+  /** Holds the name. */
+  name: string;
+
+  /** Holds the properties as an associative array. */
+  properties: any;
+
+  /** Returns name */
+  getName: () => string;
+
+  /** Returns the property for the given key. */
+  getProperty: (key: string) => any;
+}
 
 /**
  * Base class for objects that dispatch named events.  To create a subclass that inherits from mxEventSource, the following code is used.
@@ -133,5 +132,7 @@ declare class mxPoint {
   clone();
 
 }
+
+declare var mxUtils;
 
 /******************      Util end      **************/

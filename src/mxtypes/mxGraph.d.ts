@@ -9,6 +9,7 @@ declare class mxGraph {
 
   constructor(container: any);
 
+  insertVertex(parent, id: string, value: any, x: number, y: number, width: number, height: number, style?: string, relative?: boolean);
   mouseListeners;
   isMouseDown;
   model;
