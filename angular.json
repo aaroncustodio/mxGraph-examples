@@ -25,12 +25,18 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "src/assets/", "output": "/assets/" },
+              { "glob": "favicon.ico", "input": "/src", "output": "/" },
+              { "glob": "**/*", "input": "./node_modules/mxgraph/javascript/src", "output": "/assets/mxgraph" }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/mxgraph.conf.js",
+              "node_modules/mxgraph/javascript/mxClient.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,12 +91,18 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "src/assets/", "output": "/assets/" },
+              { "glob": "favicon.ico", "input": "/src", "output": "/" },
+              { "glob": "**/*", "input": "./node_modules/mxgraph/javascript/src", "output": "/assets/mxgraph" }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/mxgraph.conf.js",
+              "node_modules/mxgraph/javascript/mxClient.js"
+            ]
           }
         },
         "lint": {
