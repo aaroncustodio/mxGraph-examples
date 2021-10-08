@@ -4,3 +4,33 @@
     height: 225px;
     width: 400px;
 }
+
+._mxPersonCard {
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: #FCFCFC;
+
+    // Equivalent to: fxLayout="row" fxLayoutAlign="space-between center"
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
+
+    .mxPersonIcon {
+        margin-left: 1em;
+        background-image: url("/assets/mxGraph/carbon_user-avatar.svg");
+        background-size: contain;
+        height: 24px;
+        width: 24px;
+    }
+    .mxPersonName {
+        margin-right: 1em;
+        color: #6C757D;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
