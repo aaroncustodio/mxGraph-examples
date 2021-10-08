@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Person } from 'src/app/models/Person';
 
 @Component({
   selector: 'app-custom-labels',
@@ -81,10 +82,4 @@ export class CustomLabelsComponent implements OnInit {
   setStyles(graph: mxGraph): void {
     
   }
-}
-
-interface Person {
-  firstName: string;
-  lastName: string;
-  age: number;
 }
