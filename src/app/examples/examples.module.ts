@@ -7,6 +7,7 @@ import { DropTargetsComponent } from './drop-targets/drop-targets.component';
 import { CustomLabelsComponent } from './custom-labels/custom-labels.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HtmlLabelsComponent } from './html-labels/html-labels.component';
+import { Test1Component } from '../exercise/test1/test1.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HtmlLabelsComponent } from './html-labels/html-labels.component';
     BasicStylingComponent,
     DropTargetsComponent,
     CustomLabelsComponent,
-    HtmlLabelsComponent
+    HtmlLabelsComponent,
+    Test1Component
   ],
   imports: [
     CommonModule,
