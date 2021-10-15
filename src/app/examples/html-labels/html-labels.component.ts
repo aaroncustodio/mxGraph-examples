@@ -79,7 +79,9 @@ export class HtmlLabelsComponent implements OnInit {
 
     style = mxUtils.clone(style);
     // Overflow fill must be applied so the HTML will fill the cell
-    style[mxConstants.STYLE_OVERFLOW] = 'fill';
+    style[mxConstants.STYLE_OVERFLOW] = 'visible';
+    style[mxConstants.STYLE_STROKECOLOR] = 'none';
+    style[mxConstants.STYLE_FILLCOLOR] = 'transparent';
     graph.getStylesheet().putCellStyle(this.PERSON_STYLE, style);
   }
 }
